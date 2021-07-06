@@ -11,7 +11,7 @@
             </a>
         </div>
         <span class="pageHomeTitle">QILIANG HOME PAGE</span> 
-        <a href="">
+        <a href="" @click.prevent="scrollDwon">
             <svg class="icon downIcon" aria-hidden="true">
                 <use xlink:href="#icon-RectangleCopy3"></use>
             </svg>
@@ -33,6 +33,12 @@ export default {
         getSearchMessage: function() {
             this.searchValue = `https://www.google.com.hk/search?q=${this.value}`
             window.location.href=this.searchValue
+        },
+        scrollDwon:function(){
+            window.scrollTo({
+                top:800,
+                behavior:"smooth"
+            });
         }
     },
 }
@@ -48,6 +54,7 @@ export default {
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat; 
+        
     }
     #mainViewCenter{
         display: flex;

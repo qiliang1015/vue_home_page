@@ -4,7 +4,8 @@
   <headerView></headerView>
   <mainView></mainView>
   <!-- <contentView></contentView> -->
-  <!-- <contentViewTwo></contentViewTwo> -->
+  <contentViewTwo></contentViewTwo>
+  
 </div>
   
 </template>
@@ -12,14 +13,14 @@
 <script>
 import headerView from './components/headerView.vue'
 // import contentView from './components/contentView.vue'
-// import contentViewTwo from './components/contentViewTwo.vue'
+import contentViewTwo from './components/contentViewTwo.vue'
 import mainView from './components/mainView.vue'
 export default {
-  name: 'App',
+  name: 'app',
   components: {
     headerView,
     // contentView,
-    // contentViewTwo,
+    contentViewTwo,
     mainView
   }
 }
